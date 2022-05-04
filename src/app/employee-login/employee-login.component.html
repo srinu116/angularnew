@@ -1,0 +1,37 @@
+<div class="col-md-6 offset-md-3">
+    <h3>Employee Login</h3>
+    <form (ngSubmit)="onSubmit()" name="loginform">
+        <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Employee Id</label>
+            <input type="text" class="form-control"  [(ngModel)]="employee.employeeId" id="employeeId" name="employeeId" placeholder="ex:1xxxx1">
+          </div>
+
+          <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Password</label>
+            <input type="password" class="form-control" [(ngModel)]="employee.password" id="password" name="password" placeholder="Enter your Password">
+          </div>
+    
+        
+        <button class="btn btn-primary" type="submit">Login</button>
+    
+    
+    </form>
+    <script>
+      function validateDetails(){
+
+        var password = document.loginform.password;
+        var employeeId = document.loginform.employeeId;
+
+        var password1=document.employeeId.password;
+
+        if(password === password1){
+          alert("login successful");
+        }else{
+          alert("invalid credentials");
+        }
+
+      }
+      
+
+    </script>
+    </div>

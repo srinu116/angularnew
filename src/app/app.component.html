@@ -1,0 +1,32 @@
+
+<nav class="navbar navbar-expand-sm bg-primary navbar dark">
+  <ul class="navbar-nav">
+    <li calss="nav-item">
+      <a routerLink="employees" routerLinkActive="active" class="nav-link"><b>Employee List</b></a>
+
+    </li>
+
+    <li calss="nav-item">
+      <a routerLink="create-employee" routerLinkActive="active" class="nav-link"><b>Add Employee</b></a>
+
+    </li>
+
+    <li calss="nav-item">
+      <a routerLink="employee-login" routerLinkActive="active" class="nav-link"><b>Login</b></a>
+
+    </li>
+  </ul>
+</nav> 
+
+<h1 class="text-center">{{title}}</h1>
+<div class="container">
+<router-outlet></router-outlet>
+
+</div>
+
+<footer class="footer">
+  <div class="container">
+    <span>All Right are reserved</span>
+
+  </div>
+</footer>
